@@ -14,7 +14,29 @@
 
 int main(int argc, char **argv)
 {
-	char cmdline[MAXBUF]; // stores user input from commmand line
+	// char* line = (char*) malloc(256);
+	// while(strcmp(line, "exit")){
+	// 	printf("dsh> ");
+	// 	fgets(line, 256, stdin);
+	// 	printf("before = %s\n", line);  
+	// 	cleanUp(line);
+	// 	printf("after = %s\n", line); 
+	// 	split(line, " ");
+		
+	// 	// if(line[0] == '/'){
+	// 	// 	mode1(line);
+	// 	// }
+	// }
 
-	return 0;
+	// char* test = malloc(9 * sizeof(char));
+    // strcpy(test,"hi hi hi");
+    // char** result = split(test, " ");
+    // for(int i = 0; i < sizeof(test); i++){
+    //     printf("%s\n",result[i]);
+    // }
+	char* test = "dsh sure is a hard method to code in.";
+	char delim = ' ';
+	int c = count(test, delim);
+	printf("%d", c);
+         return 0;
 }
